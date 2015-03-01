@@ -7,8 +7,67 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="image-container set-full-height" >
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+           
+            <!--      Wizard container        -->   
+            <div class="wizard-container"> 
+                <form action="" method="">
+                <div class="card wizard-card ct-wizard-blue" id="wizard">
+                    	<div class="wizard-header">
+                        	<div class="logo">
+                              <%= image_tag "aomLogo.png", class: "logo-src"%>
+                          </div>
+                    	</div>
+                    	<ul>
+                            <li><a href="#about" data-toggle="tab">Fellow Nomination</a></li>
+                      </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="about">
+                              <div class="row">
+                                  <div class="col-sm-10 col-sm-offset-1">
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">My email is:</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Andrew...">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">I would like to nominate:</label>
+                                        <input type="text" class="form-control" id="exampleNomineeName" placeholder="Smith...">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">Her/His email is:</label>
+                                        <input type="email" class="form-control" id="exampleNomineeMail" placeholder="smith@mail.com...">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">Paste nominee's CV here:</label>
+                                        <textarea class="form-control" id="exampleNomineeMail" placeholder="smith@mail.com..."rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">Paste nominee's supporting statement here:</label>
+                                        <textarea class="form-control" id="exampleNomineeMail" placeholder="smith@mail.com..."rows="3"></textarea>
+                                      </div>
+                                      <div class="myButton">
+	                                      <button class="btn btn-primary btn-fill">Submit Nomination</button>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        
+                </div>
+                </form>
+            </div> <!-- wizard container -->
+        </div>
+        </div><!-- end row -->
+    </div> <!--  big container -->
+</div>
 <%= yield %>
-
 </body>
+
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
 </html>

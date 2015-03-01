@@ -15,4 +15,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require wizard.js
+//= require jquery.bootstrap.wizard
 
